@@ -1,0 +1,13 @@
+﻿using ClassLibrary1;
+using System;
+
+namespace WebApplication1
+{
+	public class Global : System.Web.HttpApplication
+	{
+		protected void Application_Start(object sender, EventArgs e)
+		{
+			Class1.DoIt(); // crashes
+		}
+	}
+}
